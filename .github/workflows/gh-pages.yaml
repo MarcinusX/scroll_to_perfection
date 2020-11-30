@@ -19,6 +19,7 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release --dart-define=FLUTTER_WEB_USE_SKIA=true
       - run: |
+          cd build/web
           git init
           git config --global user.email marcin.szalek1@gmail.com
           git config --global user.name MarcinusX
